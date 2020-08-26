@@ -30,7 +30,12 @@ class Main extends Component {
     return (
       <div>
         <Navbar />
-        
+        <div className={styles.body}>
+          Body
+        </div>
+        <div className={styles.footer}>
+          Footer
+        </div>
       </div>
     );
   }

@@ -16,7 +16,7 @@ class Navbar extends Component {
     
     return (
       <div className={styles.navbar} ref={this.navbar}>
-       
+        Navbar
       </div>
     );
   }

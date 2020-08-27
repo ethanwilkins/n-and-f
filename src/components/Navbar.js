@@ -12,7 +12,7 @@ class Navbar extends Component {
   }
   
   render() {
-    const { open } = this.state;
+    //const { open } = this.state;
     
     return (
       <div className={styles.navbar} ref={this.navbar}>

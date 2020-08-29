@@ -10,11 +10,27 @@
 }
 
 .navbar {
-  position: fixed;
-  top: 0px;
-  left: 0px;
+  position: relative;
   width: 100vw;
-  height: 72px;
-  text-align: center;
-  z-index: 2;
+  height: 170px;
+}
+
+.logo {
+  position: absolute;
+  top: 27px;
+  left: 23px;
+}
+
+.hamburger {
+  position: absolute;
+  top: 25px;
+  right: 33px;
+}
+
+.hamburgerTouchTarget {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 90px;
+  height: 70px;
 }

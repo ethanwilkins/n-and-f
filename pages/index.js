@@ -1,11 +1,5 @@
 import React from 'react';
-
 import App from './_app';
+const Home = () => <App />;
+export default Home;
 
-export default function Home() {
-  return (
-    <div>
-      <App/>
-    </div>
-  )
-};

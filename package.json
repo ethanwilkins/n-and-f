@@ -1,5 +1,5 @@
 {
-  "name": "learn-starter",
+  "name": "n-and-f",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -8,12 +8,10 @@
     "start": "next start"
   },
   "dependencies": {
-    "history": "^5.0.0",
     "next": "9.3.5",
     "node-sass": "^4.14.1",
     "react": "16.13.1",
     "react-dom": "16.13.1",
-    "react-router-dom": "^5.2.0",
     "sass": "^1.26.10"
   }
 }

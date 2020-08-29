@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import styles from '../styles/Navbar.module.scss';
+import styles from './Navbar.module.scss';
 
 class Navbar extends Component {
   constructor(props) {

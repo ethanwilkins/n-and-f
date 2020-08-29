@@ -10,7 +10,7 @@ export default function App() {
     <div>
       <Head>
         <title>N&F</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/static/images/favicon.ico" />
       </Head>
       <Main />
     </div>

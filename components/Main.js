@@ -7,7 +7,7 @@ import styles from './Main.module.scss';
 class Main extends Component {
   render() {
     return (
-      <div>
+      <main>
         <Navbar />
         <div className={styles.body}>
           Body
@@ -15,8 +15,8 @@ class Main extends Component {
         <div className={styles.footer}>
           Footer
         </div>
-      </div>
-    );
+      </main>
+    )
   }
 }
 

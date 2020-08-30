@@ -14,9 +14,6 @@
 }
 
 .subheading {
-  font-size: 16px;
-  line-height: 28px;
-  letter-spacing: -0.025em;
   width: 368px;
   margin: 0 auto;
   padding-bottom: 24px;
@@ -25,4 +22,28 @@
 .getInTouchContainer {
   width: 368px;
   margin: 0 auto;
+  padding-bottom: 48px;
+}
+
+.projectSection {
+  border-top: 1px solid #F2F2F2;
+  padding-top: 48px;
+  text-align: center;
+}
+
+.projectImg1 {
+  width: 368px;
+  margin-bottom: 48px;
+}
+
+.projectImg2 {
+  @extend .projectImg1;
+  margin-bottom: 24px;
+}
+
+.projectSectionText {
+  width: 368px;
+  margin: 0 auto;
+  text-align: left;
+  padding-bottom: 95px;
 }

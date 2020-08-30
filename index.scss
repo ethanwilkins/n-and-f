@@ -1,13 +1,13 @@
-$warmInk: #120E05;
-$decoCoin: #E6AD39;
+$gray: #333333;
 
 @font-face {
-  font-family: "Raleway";
-  src: url("./static/fonts/Raleway.ttf") format("truetype");
+  font-family: "Inter";
+  src: url("./static/fonts/Inter.woff") format("woff");
 }
 
 html {
-  font-family: "Raleway";
+  font-family: "Inter";
+  color: $gray
 }
 
 body {
@@ -27,8 +27,8 @@ body {
 }
 
 ::selection {
-  color: $decoCoin;
-  background: $warmInk;
+  color: white;
+  background: $gray;
 }
 
 // stops blue selection for tapping of links in mobile

@@ -11,20 +11,21 @@
 
 .navbar {
   position: relative;
-  width: 100vw;
+  width: 368px;
+  margin: 0 auto;
   height: 170px;
 }
 
 .logo {
   position: absolute;
   top: 27px;
-  left: 23px;
+  left: 0px;
 }
 
 .hamburger {
   position: absolute;
   top: 25px;
-  right: 33px;
+  right: 0px;
 }
 
 .hamburgerTouchTarget {

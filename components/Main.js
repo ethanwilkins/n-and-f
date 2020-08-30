@@ -52,7 +52,24 @@ export default function Main() {
         </div>
       </main>
       
-      <footer>
+      <footer className={styles.footer}>
+        <div className={styles.footerInner}>
+          <img
+            src="/static/images/profilePicture.svg"
+            className={styles.profilePicture}
+            alt="Profile 1"
+          />
+          <img
+            src="/static/images/profilePicture.svg"
+            className={styles.profilePicture}
+            alt="Profile 2"
+          />
+          <div className={styles.footerText}>
+            We enjoy the intersection of technology and creativity and the opportunities that it brings.
+            <div className={styles.footerTextBreak}></div>
+            If you would like to get in touch, email us at n&f@gmail.com 2020 ©
+          </div>
+        </div>
       </footer>
     </div>
   )

@@ -1,3 +1,6 @@
+$gray: #333333;
+$lightGray: #F2F2F2;
+
 @font-face {
   font-family: "Inter Extra Bold";
   src: url("../static/fonts/Inter-ExtraBold.woff") format("woff");
@@ -46,4 +49,28 @@
   margin: 0 auto;
   text-align: left;
   padding-bottom: 95px;
+}
+
+.footer {
+  background: $gray;
+  padding-top: 72px;
+}
+
+.footerInner {
+  width: 368px;
+  margin: 0 auto;
+}
+
+.profilePicture {
+  margin-right: 16px;
+  margin-bottom: 32px;
+}
+
+.footerText {
+  color: $lightGray;
+  padding-bottom: 96px;
+}
+
+.footerTextBreak {
+  height: 30px;
 }

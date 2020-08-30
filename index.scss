@@ -5,6 +5,17 @@ $gray: #333333;
   src: url("./static/fonts/Inter-Light.woff") format("woff");
 }
 
+// stops blue selection for tapping of links in mobile
+.noSelect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
 html {
   font-family: "Inter Light";
   font-size: 16px;
@@ -15,6 +26,12 @@ html {
 
 body {
   margin: 0;
+}
+
+a {
+  @extend .noSelect;
+  text-decoration: none;
+  color: $gray;
 }
 
 * {
@@ -32,15 +49,4 @@ body {
 ::selection {
   color: white;
   background: $gray;
-}
-
-// stops blue selection for tapping of links in mobile
-.noSelect {
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-tap-highlight-color: transparent;
 }

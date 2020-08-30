@@ -2,6 +2,11 @@ $gray: #333333;
 $lightGray: #F2F2F2;
 
 @font-face {
+  font-family: "Inter";
+  src: url("../static/fonts/Inter.woff") format("woff");
+}
+
+@font-face {
   font-family: "Inter Extra Bold";
   src: url("../static/fonts/Inter-ExtraBold.woff") format("woff");
 }
@@ -31,12 +36,13 @@ $lightGray: #F2F2F2;
 .projectSection {
   border-top: 1px solid #F2F2F2;
   padding-top: 48px;
-  text-align: center;
 }
 
 .projectImg1 {
   width: 368px;
+  margin: 0 auto;
   margin-bottom: 48px;
+  display: block;
 }
 
 .projectImg2 {
@@ -49,6 +55,13 @@ $lightGray: #F2F2F2;
   margin: 0 auto;
   text-align: left;
   padding-bottom: 95px;
+}
+
+.projectSectionTextLink {
+  text-decoration: none;
+  color: $gray;
+  font-family: "Inter";
+  font-weight: bold;
 }
 
 .footer {
@@ -73,4 +86,9 @@ $lightGray: #F2F2F2;
 
 .footerTextBreak {
   height: 30px;
+}
+
+.footerEmailLink {
+  @extend .projectSectionTextLink;
+  color: $lightGray;
 }

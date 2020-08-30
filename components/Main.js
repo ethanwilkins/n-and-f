@@ -20,34 +20,46 @@ export default function Main() {
         </div>
         
         <div className={styles.projectSection}>
-          <img
-            src="/static/images/ratio1.png"
-            className={styles.projectImg1}
-            alt="Ratio 1"
-          />
-          <img
-            src="/static/images/ratio2.png"
-            className={styles.projectImg2}
-            alt="Ratio 2"
-          />
+          <a
+            href="https://typeratio.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="/static/images/ratio1.png"
+              className={styles.projectImg1}
+              alt="Ratio 1"
+            />
+            <img
+              src="/static/images/ratio2.png"
+              className={styles.projectImg2}
+              alt="Ratio 2"
+            />
+          </a>
           <div className={styles.projectSectionText}>
-            We created ratio to make type systems easy and fun to make. Our main priority was making the experience on mobile a blast! Click here for the case study. Try it out at typeratio.com!
+            We created ratio to make type systems easy and fun to make. Our main priority was making the experience on mobile a blast! Click <a href="https://typeratio.com" target="_blank" rel="noopener noreferrer" className={styles.projectSectionTextLink}>here</a> for the case study. Try it out at typeratio.com!
           </div>
         </div>
         
         <div className={styles.projectSection}>
-          <img
-            src="/static/images/ratio1.png"
-            className={styles.projectImg1}
-            alt="Waldos 1"
-          />
-          <img
-            src="/static/images/ratio2.png"
-            className={styles.projectImg2}
-            alt="Waldos 2"
-          />
+          <a
+            href="https://waldostyliststudio.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="/static/images/ratio1.png"
+              className={styles.projectImg1}
+              alt="Waldos 1"
+            />
+            <img
+              src="/static/images/ratio2.png"
+              className={styles.projectImg2}
+              alt="Waldos 2"
+            />
+          </a>
           <div className={styles.projectSectionText}>
-            We crafted a clean and elegant site for Waldos Stylist Studio as well as a new brand identity. The site is straight-forward and to the point. Like the client. Click here for the case study. Check it out at waldostyliststudio.com!
+            We crafted a clean and elegant site for Waldos Stylist Studio as well as a new brand identity. The site is straight-forward and to the point. Like the client. Click <a href="https://waldostyliststudio.com" target="_blank" rel="noopener noreferrer" className={styles.projectSectionTextLink}>here</a> for the case study. Check it out at waldostyliststudio.com!
           </div>
         </div>
       </main>
@@ -67,7 +79,7 @@ export default function Main() {
           <div className={styles.footerText}>
             We enjoy the intersection of technology and creativity and the opportunities that it brings.
             <div className={styles.footerTextBreak}></div>
-            If you would like to get in touch, email us at n&f@gmail.com 2020 ©
+            If you would like to get in touch, email us at <a href="mailto:n&f@gmail.com" target="_blank" rel="noopener noreferrer" className={styles.footerEmailLink}>n&f@gmail.com</a> 2020 ©
           </div>
         </div>
       </footer>

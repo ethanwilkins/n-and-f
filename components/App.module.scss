@@ -1,0 +1,28 @@
+@font-face {
+  font-family: "Inter Extra Bold";
+  src: url("../static/fonts/Inter-ExtraBold.woff") format("woff");
+}
+
+.headline {
+  font-family: "Inter Extra Bold";
+  font-size: 40px;
+  line-height: 130%;
+  letter-spacing: -0.025em;
+  width: 368px;
+  margin: 0 auto;
+  padding-bottom: 48px;
+}
+
+.subheading {
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: -0.025em;
+  width: 368px;
+  margin: 0 auto;
+  padding-bottom: 24px;
+}
+
+.getInTouchContainer {
+  width: 368px;
+  margin: 0 auto;
+}

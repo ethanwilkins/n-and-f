@@ -54,6 +54,7 @@
 }
 
 .xTouchTarget {
+  @extend .noSelect;
   position: absolute;
   top: 0px;
   right: -30px;

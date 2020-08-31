@@ -1,10 +1,51 @@
-import React from 'react';
+import React, { useRef } from 'react';
+import { isAndroid } from 'react-device-detect';
+import Scroll from 'react-scroll';
+
+import Navbar from '../components/Navbar';
 
 import styles from './Main.module.scss';
 
+const scroller = Scroll.animateScroll;
+const scrollerOptions = {
+        duration: 300,
+        delay: 50,
+        smooth: true
+      };
+
 export default function Main() {
+  const projectSection = useRef(null);
+  const footer = useRef(null);
+  
+  const handleWorkButtonClick = () => {
+    const elementDistanceFromTop = (window.pageYOffset + projectSection.current.getBoundingClientRect().top);
+    const distanceScrolled = window.pageYOffset;
+    // subtracts distance scrolled from 
+    scroller.scrollMore(elementDistanceFromTop - distanceScrolled, scrollerOptions);
+    // haptic feedback for android
+    if (isAndroid) {
+      window.navigator.vibrate(1);
+    }
+  };
+  
+  const handleContactButtonClick = () => {
+    const elementDistanceFromTop = (window.pageYOffset + footer.current.getBoundingClientRect().top);
+    const distanceScrolled = window.pageYOffset;
+    // subtracts distance scrolled from 
+    scroller.scrollMore(elementDistanceFromTop - distanceScrolled, scrollerOptions);
+    // haptic feedback for android
+    if (isAndroid) {
+      window.navigator.vibrate(1);
+    }
+  };
+
   return (
     <div>
+      <Navbar
+        handleWorkButtonClick={handleWorkButtonClick}
+        handleContactButtonClick={handleContactButtonClick}
+      />
+      
       <main>
         <div className={styles.headline}>
           We design and build user friendly digital experiences for your product and services.
@@ -14,12 +55,16 @@ export default function Main() {
         </div>
         <div className={styles.getInTouchContainer}>
           <img
+            onClick={handleContactButtonClick}
             src="/static/images/contactButton.svg"
             alt="Get in touch!"
           />
         </div>
         
-        <div className={styles.projectSection}>
+        <div
+          ref={projectSection}
+          className={styles.projectSection}
+        >
           <a
             href="https://typeratio.com"
             target="_blank"
@@ -64,7 +109,10 @@ export default function Main() {
         </div>
       </main>
       
-      <footer className={styles.footer}>
+      <footer
+        ref={footer}
+        className={styles.footer}
+      >
         <div className={styles.footerInner}>
           <img
             src="/static/images/profilePicture.svg"

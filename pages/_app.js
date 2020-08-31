@@ -1,6 +1,5 @@
 import React from 'react';
 import Head from 'next/head';
-import Navbar from '../components/Navbar';
 import Main from '../components/Main';
 
 import '../index.scss';
@@ -25,7 +24,6 @@ export default function App() {
         />
       </Head>
 
-      <Navbar />
       <Main />
     </div>
   )

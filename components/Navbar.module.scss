@@ -64,6 +64,7 @@
 }
 
 .menuItem {
+  @extend .noSelect;
   font-size: 24px;
   font-family: "Inter Bold";
   margin-bottom: 19px;

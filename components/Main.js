@@ -48,12 +48,12 @@ export default function Main() {
             rel="noopener noreferrer"
           >
             <img
-              src="/static/images/ratio1.png"
+              src="/static/images/waldos1.png"
               className={styles.projectImg1}
               alt="Waldos 1"
             />
             <img
-              src="/static/images/ratio2.png"
+              src="/static/images/waldos2.png"
               className={styles.projectImg2}
               alt="Waldos 2"
             />

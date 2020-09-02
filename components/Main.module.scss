@@ -25,13 +25,15 @@ $bodyWidthMobile: 368px;
 
 .headlineDesktop {
   @extend .headline;
-  display: none;
+  visibility: hidden;
+  height: 0;
+  padding: 0;
 }
 
 .subheading {
+  padding-bottom: 24px;
   width: $bodyWidthMobile;
   margin: 0 auto;
-  padding-bottom: 24px;
 }
 
 .getInTouchContainer {
@@ -110,12 +112,27 @@ $bodyWidthMobile: 368px;
   $bodyWidthDesktop: 784px;
   
   .headline {
-    display: none;
+    visibility: hidden;
+    height: 0;
+    padding: 0;
   }
   .headlineDesktop {
     font-size: 56px;
     line-height: 138%;
     width: $bodyWidthDesktop;
-    //display: initial;
+    visibility: initial;
+    height: initial;
+    padding-bottom: 48px;
+  }
+  .subheading {
+    width: $bodyWidthDesktop;
+    font-size: 20px;
+  }
+  .subheadingInner {
+    width: 60%;
+  }
+  .getInTouchContainer {
+    width: $bodyWidthDesktop;
+    padding-bottom: 144px;
   }
 }

@@ -1,3 +1,5 @@
+$bodyWidthMobile: 368px;
+
 @font-face {
   font-family: "Inter Bold";
   src: url("../static/fonts/Inter-Bold.woff") format("woff");
@@ -22,7 +24,7 @@
 .navbarInner {
   transition: opacity 300ms ease-in-out;
   position: relative;
-  width: 368px;
+  width: $bodyWidthMobile;
   margin: 0 auto;
 }
 
@@ -73,4 +75,18 @@
 .fadedOut {
   opacity: 0;
   z-index: -1;
+}
+
+// tablet/phone (landscape)
+@media only screen and (min-width: 896px) and (max-width: 1440px) {
+  
+}
+
+// desktop
+@media only screen and (min-width: 1440px) {
+  $bodyWidthDesktop: 784px;
+  
+  .navbarInner {
+    width: $bodyWidthDesktop;
+  }
 }

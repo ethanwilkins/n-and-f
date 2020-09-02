@@ -48,7 +48,10 @@ export default function Main() {
       
       <main>
         <div className={styles.headline}>
-          We design and build user friendly digital experiences for your product and services.
+          We Design And Build User Friendly Digital Experiences For Your Product And Services.
+        </div>
+        <div className={styles.headlineDesktop}>
+          We Design And Build User Friendly Digital Experiences For Your Product Or Services.
         </div>
         <div className={styles.subheading}>
           We do UX/UI design, product design, visual design, and website and web app development.

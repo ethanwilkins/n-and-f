@@ -11,24 +11,31 @@ $lightGray: #F2F2F2;
   src: url("../static/fonts/Inter-ExtraBold.woff") format("woff");
 }
 
+$bodyWidthMobile: 368px;
+
 .headline {
   font-family: "Inter Extra Bold";
   font-size: 40px;
   line-height: 130%;
   letter-spacing: -0.025em;
-  width: 368px;
+  width: $bodyWidthMobile;
   margin: 0 auto;
   padding-bottom: 48px;
 }
 
+.headlineDesktop {
+  @extend .headline;
+  display: none;
+}
+
 .subheading {
-  width: 368px;
+  width: $bodyWidthMobile;
   margin: 0 auto;
   padding-bottom: 24px;
 }
 
 .getInTouchContainer {
-  width: 368px;
+  width: $bodyWidthMobile;
   margin: 0 auto;
   padding-bottom: 48px;
 }
@@ -39,7 +46,7 @@ $lightGray: #F2F2F2;
 }
 
 .projectImg1 {
-  width: 368px;
+  width: $bodyWidthMobile;
   margin: 0 auto;
   margin-bottom: 48px;
   display: block;
@@ -51,7 +58,7 @@ $lightGray: #F2F2F2;
 }
 
 .projectSectionText {
-  width: 368px;
+  width: $bodyWidthMobile;
   margin: 0 auto;
   text-align: left;
   padding-bottom: 95px;
@@ -70,7 +77,7 @@ $lightGray: #F2F2F2;
 }
 
 .footerInner {
-  width: 368px;
+  width: $bodyWidthMobile;
   margin: 0 auto;
 }
 
@@ -91,4 +98,24 @@ $lightGray: #F2F2F2;
 .footerEmailLink {
   @extend .projectSectionTextLink;
   color: $lightGray;
+}
+
+// tablet/phone (landscape)
+@media only screen and (min-width: 896px) and (max-width: 1440px) {
+  
+}
+
+// desktop
+@media only screen and (min-width: 1440px) {
+  $bodyWidthDesktop: 784px;
+  
+  .headline {
+    display: none;
+  }
+  .headlineDesktop {
+    font-size: 56px;
+    line-height: 138%;
+    width: $bodyWidthDesktop;
+    //display: initial;
+  }
 }

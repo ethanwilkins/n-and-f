@@ -13,6 +13,43 @@ const scrollerOptions = {
         smooth: true
       };
 
+const ProjectSectionText = ({project, both, snippet}) => {
+  return (
+    <div className={both ? styles.projectSectionText : styles.projectSectionTextDesktop}>
+      {project === 'ratio' &&
+        <span>
+          {(both || snippet === 1) &&
+            <span>
+              We created ratio to make type systems easy and fun to make. Our main priority was making the experience on mobile a blast!
+            </span>
+          }
+          {(both || snippet === 2) &&
+            <span>
+              Click <a href="https://typeratio.com" target="_blank" rel="noopener noreferrer" className={styles.projectSectionTextLink}>here</a> for the case study. Try it out at typeratio.com!
+            </span>
+          }
+        </span>
+      }
+      
+      {project === 'waldos' &&
+        <span>
+          {(both || snippet === 1) &&
+            <span>
+              We crafted a clean and elegant site for Waldos Stylist Studio as well as a new brand identity. The site is straight-forward and to the point. Like the client.
+            </span>
+          }
+          {(both || snippet === 2) &&
+            <span>
+              Click <a href="https://waldostyliststudio.com" target="_blank" rel="noopener noreferrer" className={styles.projectSectionTextLink}>here</a> for the case study. Check it out at waldostyliststudio.com!
+            </span>
+          }
+          
+        </span>
+      }
+    </div>
+  );
+};
+
 export default function Main() {
   const projectSection = useRef(null);
   const footer = useRef(null);
@@ -70,46 +107,70 @@ export default function Main() {
           ref={projectSection}
           className={styles.projectSection}
         >
-          <a
-            href="https://typeratio.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              src="/static/images/ratio1.png"
-              className={styles.projectImg1}
-              alt="Ratio 1"
+          <div className={styles.projectSectionInnerDesktop}>
+            <a
+              href="https://typeratio.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="/static/images/ratio1.png"
+                className={styles.projectImg1}
+                alt="Ratio 1"
+              />
+              <img
+                src="/static/images/ratio2.png"
+                className={styles.projectImg2}
+                alt="Ratio 2"
+              />
+            </a>
+            <ProjectSectionText
+              project="ratio"
+              both={true}
             />
-            <img
-              src="/static/images/ratio2.png"
-              className={styles.projectImg2}
-              alt="Ratio 2"
+            <ProjectSectionText
+              project="ratio"
+              snippet={1}
             />
-          </a>
-          <div className={styles.projectSectionText}>
-            We created ratio to make type systems easy and fun to make. Our main priority was making the experience on mobile a blast! Click <a href="https://typeratio.com" target="_blank" rel="noopener noreferrer" className={styles.projectSectionTextLink}>here</a> for the case study. Try it out at typeratio.com!
+            <div className={styles.projectSectionTextSpacer}></div>
+            <ProjectSectionText
+              project="ratio"
+              snippet={2}
+            />
           </div>
         </div>
         
         <div className={styles.projectSection}>
-          <a
-            href="https://waldostyliststudio.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              src="/static/images/waldos1.png"
-              className={styles.projectImg1}
-              alt="Waldos 1"
+          <div className={styles.projectSectionInnerDesktop}>
+            <a
+              href="https://waldostyliststudio.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="/static/images/waldos1.png"
+                className={styles.projectImg1}
+                alt="Waldos 1"
+              />
+              <img
+                src="/static/images/waldos2.png"
+                className={styles.projectImg2}
+                alt="Waldos 2"
+              />
+            </a>
+            <ProjectSectionText
+              project="waldos"
+              both={true}
             />
-            <img
-              src="/static/images/waldos2.png"
-              className={styles.projectImg2}
-              alt="Waldos 2"
+            <ProjectSectionText
+              project="waldos"
+              snippet={1}
             />
-          </a>
-          <div className={styles.projectSectionText}>
-            We crafted a clean and elegant site for Waldos Stylist Studio as well as a new brand identity. The site is straight-forward and to the point. Like the client. Click <a href="https://waldostyliststudio.com" target="_blank" rel="noopener noreferrer" className={styles.projectSectionTextLink}>here</a> for the case study. Check it out at waldostyliststudio.com!
+            <div className={styles.projectSectionTextSpacer}></div>
+            <ProjectSectionText
+              project="waldos"
+              snippet={2}
+            />
           </div>
         </div>
       </main>

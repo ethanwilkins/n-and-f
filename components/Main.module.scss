@@ -66,6 +66,15 @@ $bodyWidthMobile: 368px;
   padding-bottom: 95px;
 }
 
+.projectSectionTextDesktop {
+  @extend .projectSectionText;
+  width: 384px;
+  float: left;
+  font-size: 18px;
+  margin-top: 24px;
+  display: none;
+}
+
 .projectSectionTextLink {
   text-decoration: none;
   color: $gray;
@@ -134,5 +143,50 @@ $bodyWidthMobile: 368px;
   .getInTouchContainer {
     width: $bodyWidthDesktop;
     padding-bottom: 144px;
+  }
+  .projectSectionInnerDesktop {
+    width: $bodyWidthDesktop;
+    margin: 0 auto;
+    padding-top: 20px;
+    overflow: hidden;
+  }
+  .projectImg1 {
+    float: left;
+    margin: initial;
+    width: 384px;
+  }
+  .projectImg2 {
+    margin-left: 16px;
+  }
+  .projectSectionText {
+    display: none;
+  }
+  .projectSectionTextDesktop {
+    display: initial;
+  }
+  .projectSectionTextSpacer {
+    float: left;
+    width: 16px;
+    height: 1px;
+  }
+  .footerInner {
+    width: $bodyWidthDesktop;
+    overflow: hidden;
+    margin-top: 10px;
+    padding-bottom: 90px;
+  }
+  .profilePicture {
+    float: left;
+    width: 72px;
+  }
+  .footerText {
+    float: left;
+    width: 608px;
+    margin-top: 10px;
+  }
+  .footerTextBreak {
+    height: 0;
+    display: inline;
+    margin-right: 0.4ch;
   }
 }

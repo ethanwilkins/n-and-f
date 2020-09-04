@@ -143,6 +143,18 @@ $bodyWidthMobile: 368px;
     width: 16px;
     height: 1px;
   }
+  .footerInner {
+    overflow: hidden;
+  }
+  .profilePicture {
+    float: left;
+    width: 72px;
+  }
+  .footerTextBreak {
+    height: 0;
+    display: inline;
+    margin-right: 0.5ch;
+  }
 }
 // end of tablet and up
 
@@ -177,6 +189,20 @@ $bodyWidthMobile: 368px;
     width: 304px;
     font-size: 16px;
     padding-bottom: 70px;
+  }
+  .footerInner {
+    width: $bodyWidthTablet;
+    margin-top: 40px;
+    padding-bottom: 75px;
+  }
+  .profilePicture {
+    margin-top: 6px;
+  }
+  .footerText {
+    float: left;
+    width: 432px;
+    font-size: 16px;
+    margin-left: 16px;
   }
 }
 // end of tablet
@@ -214,22 +240,13 @@ $bodyWidthMobile: 368px;
   }
   .footerInner {
     width: $bodyWidthDesktop;
-    overflow: hidden;
     margin-top: 10px;
     padding-bottom: 90px;
   }
-  .profilePicture {
-    float: left;
-    width: 72px;
-  }
   .footerText {
     float: left;
-    width: 608px;
+    width: 590px;
     margin-top: 10px;
   }
-  .footerTextBreak {
-    height: 0;
-    display: inline;
-    margin-right: 0.4ch;
-  }
 }
+// end of desktop

@@ -111,26 +111,38 @@ $bodyWidthMobile: 368px;
   color: $lightGray;
 }
 
-// tablet/phone (landscape)
-@media only screen and (min-width: 896px) and (max-width: 1440px) {
-  
-}
-
-// desktop
-@media only screen and (min-width: 1440px) {
-  $bodyWidthDesktop: 784px;
-  
+// tablet and up
+@media only screen and (min-width: 896px) {
   .headline {
     visibility: hidden;
     height: 0;
     padding: 0;
   }
   .headlineDesktop {
+    visibility: initial;
+    height: initial;
+  }
+}
+
+// tablet/phone (landscape)
+@media only screen and (min-width: 896px) and (max-width: 1440px) {
+  $bodyWidthTablet: 624px;
+  
+  .headlineDesktop {
+    font-size: 44px;
+    line-height: 140%;
+    width: $bodyWidthTablet;
+  }
+}
+
+// desktop
+@media only screen and (min-width: 1440px) {
+  $bodyWidthDesktop: 784px;
+  
+  .headlineDesktop {
     font-size: 56px;
     line-height: 138%;
     width: $bodyWidthDesktop;
-    visibility: initial;
-    height: initial;
     padding-bottom: 48px;
   }
   .subheading {

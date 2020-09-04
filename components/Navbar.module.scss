@@ -91,9 +91,36 @@ $bodyWidthMobile: 368px;
   z-index: -1;
 }
 
+// tablet and up
+@media only screen and (min-width: 896px) {
+  .hamburger, .xTouchTarget {
+    display: none;
+  }
+  .menu {
+    display: none;
+  }
+  .menuDesktop {
+    display: initial;
+  }
+}
+
 // tablet/phone (landscape)
 @media only screen and (min-width: 896px) and (max-width: 1440px) {
+  $bodyWidthTablet: 624px;
   
+  .navbar {
+    height: 140px;
+  }
+  .navbarInner {
+    width: $bodyWidthTablet;
+  }
+  .menuDesktop {
+    top: 20px;
+  }
+  .menuItemDesktop {
+    margin-left: 13px;
+    font-size: 20px;
+  }
 }
 
 // desktop
@@ -106,14 +133,5 @@ $bodyWidthMobile: 368px;
   .logo {
     top: 25px;
     width: 60px;
-  }
-  .hamburger, .xTouchTarget {
-    display: none;
-  }
-  .menu {
-    display: none;
-  }
-  .menuDesktop {
-    display: initial;
   }
 }

@@ -68,10 +68,6 @@ $bodyWidthMobile: 368px;
 
 .projectSectionTextDesktop {
   @extend .projectSectionText;
-  width: 384px;
-  float: left;
-  font-size: 18px;
-  margin-top: 24px;
   display: none;
 }
 
@@ -121,8 +117,34 @@ $bodyWidthMobile: 368px;
   .headlineDesktop {
     visibility: initial;
     height: initial;
+    padding-bottom: 48px;
+  }
+  .projectSectionInnerDesktop {
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  .projectImg1 {
+    float: left;
+    margin: initial;
+  }
+  .projectImg2 {
+    margin-left: 16px;
+  }
+  .projectSectionText {
+    display: none;
+  }
+  .projectSectionTextDesktop {
+    float: left;
+    display: initial;
+    margin-top: 24px;
+  }
+  .projectSectionTextSpacer {
+    float: left;
+    width: 16px;
+    height: 1px;
   }
 }
+// end of tablet and up
 
 // tablet/phone (landscape)
 @media only screen and (min-width: 896px) and (max-width: 1440px) {
@@ -133,7 +155,30 @@ $bodyWidthMobile: 368px;
     line-height: 140%;
     width: $bodyWidthTablet;
   }
+  .subheading {
+    width: $bodyWidthTablet;
+    font-size: 18px;
+  }
+  .subheadingInner {
+    width: 70%;
+  }
+  .getInTouchContainer {
+    width: $bodyWidthTablet;
+    padding-bottom: 90px;
+  }
+  .projectSectionInnerDesktop {
+    width: $bodyWidthTablet;
+    padding-top: 10px;
+  }
+  .projectImg1 {
+    width: 304px;
+  }
+  .projectSectionTextDesktop {
+    width: 304px;
+    font-size: 16px;
+  }
 }
+// end of tablet
 
 // desktop
 @media only screen and (min-width: 1440px) {
@@ -143,7 +188,6 @@ $bodyWidthMobile: 368px;
     font-size: 56px;
     line-height: 138%;
     width: $bodyWidthDesktop;
-    padding-bottom: 48px;
   }
   .subheading {
     width: $bodyWidthDesktop;
@@ -158,28 +202,14 @@ $bodyWidthMobile: 368px;
   }
   .projectSectionInnerDesktop {
     width: $bodyWidthDesktop;
-    margin: 0 auto;
     padding-top: 20px;
-    overflow: hidden;
   }
   .projectImg1 {
-    float: left;
-    margin: initial;
     width: 384px;
   }
-  .projectImg2 {
-    margin-left: 16px;
-  }
-  .projectSectionText {
-    display: none;
-  }
   .projectSectionTextDesktop {
-    display: initial;
-  }
-  .projectSectionTextSpacer {
-    float: left;
-    width: 16px;
-    height: 1px;
+    width: 384px;
+    font-size: 18px;
   }
   .footerInner {
     width: $bodyWidthDesktop;

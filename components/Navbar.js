@@ -42,7 +42,23 @@ export default function Navbar(props) {
           onClick={() => setOpen(true)}
           className={styles.xTouchTarget}
         ></div>
+        
+        <div className={styles.menuDesktop}>
+          <div
+            onClick={handleWorkButtonClick}
+            className={styles.menuItemDesktop}
+          >
+            Work
+          </div>
+          <div
+            onClick={handleContactButtonClick}
+            className={styles.menuItemDesktop}
+          >
+            Contact
+          </div>
+        </div>
       </div>
+      
       <div
         className={cx(styles.navbarInner, {
           fadedOut: !open

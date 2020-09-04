@@ -50,6 +50,13 @@ $bodyWidthMobile: 368px;
   text-align: right;
 }
 
+.menuDesktop {
+  display: none;
+  position: absolute;
+  top: 22px;
+  right: 0px;
+}
+
 .xButton {
   margin-top: 25px;
   margin-bottom: 22px;
@@ -72,6 +79,13 @@ $bodyWidthMobile: 368px;
   margin-bottom: 19px;
 }
 
+.menuItemDesktop {
+  @extend .menuItem;
+  display: inline;
+  margin-left: 19px;
+  cursor: pointer;
+}
+
 .fadedOut {
   opacity: 0;
   z-index: -1;
@@ -88,5 +102,18 @@ $bodyWidthMobile: 368px;
   
   .navbarInner {
     width: $bodyWidthDesktop;
+  }
+  .logo {
+    top: 25px;
+    width: 60px;
+  }
+  .hamburger, .xTouchTarget {
+    display: none;
+  }
+  .menu {
+    display: none;
+  }
+  .menuDesktop {
+    display: initial;
   }
 }

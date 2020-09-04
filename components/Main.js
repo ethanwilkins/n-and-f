@@ -30,7 +30,6 @@ const ProjectSectionText = ({project, both, snippet}) => {
           }
         </span>
       }
-      
       {project === 'waldos' &&
         <span>
           {(both || snippet === 1) &&
@@ -42,8 +41,7 @@ const ProjectSectionText = ({project, both, snippet}) => {
             <span>
               Click <a href="https://waldostyliststudio.com" target="_blank" rel="noopener noreferrer" className={styles.projectSectionTextLink}>here</a> for the case study. Check it out at waldostyliststudio.com!
             </span>
-          }
-          
+          }   
         </span>
       }
     </div>

@@ -79,6 +79,7 @@ $bodyWidthMobile: 368px;
 }
 
 .footer {
+  width: 100%;
   background: $gray;
   padding-top: 72px;
 }
@@ -107,8 +108,11 @@ $bodyWidthMobile: 368px;
   color: $lightGray;
 }
 
+$responsiveBreakpoint: 800px;
+$desktopBreakpoint: 1440px;
+
 // tablet and up
-@media only screen and (min-width: 896px) {
+@media only screen and (min-width: $responsiveBreakpoint) {
   .headline {
     visibility: hidden;
     height: 0;
@@ -159,7 +163,7 @@ $bodyWidthMobile: 368px;
 // end of tablet and up
 
 // tablet/phone (landscape)
-@media only screen and (min-width: 896px) and (max-width: 1440px) {
+@media only screen and (min-width: $responsiveBreakpoint) and (max-width: $desktopBreakpoint) {
   $bodyWidthTablet: 624px;
   
   .headlineDesktop {
@@ -208,7 +212,7 @@ $bodyWidthMobile: 368px;
 // end of tablet
 
 // desktop
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: $desktopBreakpoint) {
   $bodyWidthDesktop: 784px;
   
   .headlineDesktop {

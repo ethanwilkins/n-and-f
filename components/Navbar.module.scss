@@ -91,8 +91,11 @@ $bodyWidthMobile: 368px;
   z-index: -1;
 }
 
+$responsiveBreakpoint: 800px;
+$desktopBreakpoint: 1440px;
+
 // tablet and up
-@media only screen and (min-width: 896px) {
+@media only screen and (min-width: $responsiveBreakpoint) {
   .hamburger, .xTouchTarget {
     display: none;
   }
@@ -105,7 +108,7 @@ $bodyWidthMobile: 368px;
 }
 
 // tablet/phone (landscape)
-@media only screen and (min-width: 896px) and (max-width: 1440px) {
+@media only screen and (min-width: $responsiveBreakpoint) and (max-width: $desktopBreakpoint) {
   $bodyWidthTablet: 624px;
   
   .navbar {
@@ -124,7 +127,7 @@ $bodyWidthMobile: 368px;
 }
 
 // desktop
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: $desktopBreakpoint) {
   $bodyWidthDesktop: 784px;
   
   .navbarInner {

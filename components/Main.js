@@ -24,8 +24,8 @@ const ProjectSectionText = ({project, both, snippet}) => {
             </span>
           }
           {(both || snippet === 2) &&
-            <span>
-              Click <a href="https://typeratio.com" target="_blank" rel="noopener noreferrer" className={styles.projectSectionTextLink}>here</a> for the case study. Try it out at typeratio.com!
+            <span className={styles.clickHereText}>
+              Click <a href="https://bit.ly/niin-portfolio" target="_blank" rel="noopener noreferrer" className={styles.projectSectionTextLink}>here</a> for the case study. Try it out at typeratio.com!
             </span>
           }
         </span>
@@ -38,8 +38,8 @@ const ProjectSectionText = ({project, both, snippet}) => {
             </span>
           }
           {(both || snippet === 2) &&
-            <span>
-              Click <a href="https://waldostyliststudio.com" target="_blank" rel="noopener noreferrer" className={styles.projectSectionTextLink}>here</a> for the case study. Check it out at waldostyliststudio.com!
+            <span className={styles.clickHereText}>
+              Click <a href="https://bit.ly/niin-portfolio" target="_blank" rel="noopener noreferrer" className={styles.projectSectionTextLink}>here</a> for the case study. Check it out at waldostyliststudio.com!
             </span>
           }   
         </span>

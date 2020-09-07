@@ -78,6 +78,10 @@ $bodyWidthMobile: 368px;
   font-weight: bold;
 }
 
+.clickHereText {
+  margin-left: 0.5ch;
+}
+
 .footer {
   width: 100%;
   background: $gray;
@@ -158,6 +162,9 @@ $desktopBreakpoint: 1440px;
     height: 0;
     display: inline;
     margin-right: 0.5ch;
+  }
+  .clickHereText {
+    margin-left: initial;
   }
 }
 // end of tablet and up

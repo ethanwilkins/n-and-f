@@ -113,7 +113,7 @@ $bodyWidthMobile: 368px;
 }
 
 $responsiveBreakpoint: 600px;
-$desktopBreakpoint: 1440px;
+$desktopBreakpoint: 1100px;
 
 // tablet and up
 @media only screen and (min-width: $responsiveBreakpoint) {
@@ -171,7 +171,8 @@ $desktopBreakpoint: 1440px;
 
 // tablet/phone (landscape)
 @media only screen and (min-width: $responsiveBreakpoint) and (max-width: $desktopBreakpoint) {
-  $bodyWidthTablet: 624px;
+  $bodyWidthTablet: 70%;
+  $projectSectionContentWidth: 48%;
   
   .headlineDesktop {
     font-size: 44px;
@@ -194,10 +195,10 @@ $desktopBreakpoint: 1440px;
     padding-top: 15px;
   }
   .projectImg1 {
-    width: 304px;
+    width: $projectSectionContentWidth;
   }
   .projectSectionTextDesktop {
-    width: 304px;
+    width: $projectSectionContentWidth;
     font-size: 16px;
     padding-bottom: 70px;
   }
@@ -207,11 +208,13 @@ $desktopBreakpoint: 1440px;
     padding-bottom: 75px;
   }
   .profilePicture {
+    width: 12%;
     margin-top: 6px;
+    margin-right: 1.5%;
   }
   .footerText {
     float: left;
-    width: 432px;
+    width: 69%;
     font-size: 16px;
     margin-left: 16px;
   }
@@ -251,7 +254,7 @@ $desktopBreakpoint: 1440px;
   }
   .footerInner {
     width: $bodyWidthDesktop;
-    margin-top: 10px;
+    margin-top: 20px;
     padding-bottom: 90px;
   }
   .footerText {

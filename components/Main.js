@@ -179,12 +179,12 @@ export default function Main() {
       >
         <div className={styles.footerInner}>
           <img
-            src="/static/images/profilePicture.svg"
+            src="/static/images/neil.jpg"
             className={styles.profilePicture}
             alt="Profile 1"
           />
           <img
-            src="/static/images/profilePicture.svg"
+            src="/static/images/forrest.jpg"
             className={styles.profilePicture}
             alt="Profile 2"
           />

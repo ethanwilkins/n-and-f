@@ -97,6 +97,7 @@ $bodyWidthMobile: 89%;
   margin-right: 16px;
   margin-bottom: 32px;
   border-radius: 50%;
+  width: 112px;
 }
 
 .footerText {
@@ -256,6 +257,9 @@ $desktopBreakpoint: 1100px;
     width: $bodyWidthDesktop;
     margin-top: 20px;
     padding-bottom: 90px;
+  }
+  .profilePicture {
+    width: 72px;
   }
   .footerText {
     float: left;
